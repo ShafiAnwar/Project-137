@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+
+</head>
+
+<body background="background.jpeg">
+    <div class="header">
+        <center>
+            <p class="p1">AI Object filter</p>
+            <br>
+            <span class="note">Note:</span>
+            <p class="p2">This input name which you will given should match the names present in CocoSSD model then only
+                it will detect</p>
+    </div>
+    </center>
+    <br><br>
+    <center>
+        <label class="name">Object Name</label>
+        <br><br>
+        <input type="text" placeholder="Object name" class="input_class" id="input_text" autocomplete="off">
+        <button id="btn1" class="btn btn-success" onclick="start()">Start</button>
+        <br>
+        <h3 id="number_of_objects"></h3>
+
+        <br>
+        <h3 id="status"></h3>
+        <h3 id="object_status"></h3>
+    </center>
+
+    </center>
+
+
+</body>
+<script src="index.js"></script>
+
+</html>
